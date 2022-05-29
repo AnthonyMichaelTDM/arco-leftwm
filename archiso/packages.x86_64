@@ -596,7 +596,7 @@ archlinux-tweak-tool-git
 #arcolinux-wallpapers-dual-git
 #arcolinux-xfce-panel-profiles-git
 #arcolinux-xmobar-git
-arcolinux-zsh-git
+#arcolinux-zsh-git #replaced by edu-zsh in genesis repo
 
 ###########################################################################
 #                           ARCOLINUX DESKTOP FOLDER
@@ -620,7 +620,7 @@ arcolinux-zsh-git
 #arcolinux-i3wm-git
 #arcolinux-icewm-git
 #arcolinux-jwm-git
-#arcolinux-leftwm-git #redundant by edu-leftwm-git
+#arcolinux-leftwm-git #redundant by edu-leftwm-git in genesis repo
 #arcolinux-kodi-git
 #arcolinux-lxqt-git
 #arcolinux-mate-git

@@ -1,3 +1,8 @@
+#XeroLinux Repository
+[xerolinux_repo]
+SigLevel = Optional TrustAll
+Server = https://xerolinux.github.io/$repo/$arch
+
 [genesis-repo]
 SigLevel = Optional TrustedOnly
 Server = https://raw.githubusercontent.com/AnthonyMichaelTDM/$repo/main/$arch

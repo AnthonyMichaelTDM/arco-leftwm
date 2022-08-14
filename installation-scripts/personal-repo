@@ -1,7 +1,7 @@
-#XeroLinux Repository
-[xerolinux_repo]
+#XeroLinux nVidia Repository
+[xerolinux_nvidia_repo]
 SigLevel = Optional TrustAll
-Server = https://xerolinux.github.io/$repo/$arch
+Server = https://repos.xerolinux.xyz/$repo/$arch
 
 [genesis-repo]
 SigLevel = Optional TrustedOnly

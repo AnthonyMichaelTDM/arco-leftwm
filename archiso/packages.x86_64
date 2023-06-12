@@ -290,7 +290,7 @@ scrot
 ###fonts
 #adobe-source-sans-fonts
 #awesome-terminal-fonts
-noto-fonts
+#noto-fonts
 #ttf-bitstream-vera
 ttf-dejavu
 ttf-droid
@@ -922,10 +922,11 @@ leftwm-dev-git
 leftwm-theme-git
 sxhkd
 autorandr
-nerd-fonts-source-code-pro
+#nerd-fonts-source-code-pro
 #lolcat
 #ufetch-arco-git
 #arcolinux-wallpapers-candy-git
+ttf-noto-nerd
 ttf-iosevka-nerd
 ttf-material-design-iconic-font
 ttf-meslo-nerd-font-powerlevel10k

@@ -15,7 +15,6 @@ broadcom-wl-dkms
 btrfs-progs
 clonezilla
 #cloud-init
-#crda
 cryptsetup
 #darkhttpd
 ddrescue
@@ -34,6 +33,7 @@ ethtool
 exfatprogs
 f2fs-tools
 fatresize
+#foot-terminfo
 fsarchiver
 gnu-netcat
 gpart
@@ -44,8 +44,6 @@ grub
 hdparm
 hyperv
 intel-ucode
-ipw2100-fw
-ipw2200-fw
 irssi
 #iw
 #iwd
@@ -58,7 +56,6 @@ libusb-compat
 linux
 linux-atm
 linux-firmware
-linux-firmware-qlogic
 linux-firmware-marvell
 #livecd-sounds
 lsscsi
@@ -69,6 +66,7 @@ man-pages
 mc
 mdadm
 memtest86+
+memtest86+-efi
 mkinitcpio
 mkinitcpio-archiso
 mkinitcpio-nfs-utils
@@ -122,6 +120,7 @@ usbutils
 vim
 #virtualbox-guest-utils-nox
 vpnc
+#wezterm-terminfo
 wireless-regdb
 wireless_tools
 wpa_supplicant
@@ -133,6 +132,7 @@ xl2tpd
 aic94xx-firmware
 dialog
 dnsutils
+linux-firmware-qlogic
 linux-headers
 logrotate
 ntp
@@ -147,17 +147,17 @@ xorg-xinit
 
 ###video
 xf86-input-elographics
-xf86-input-evdev
+#xf86-input-evdev
 xf86-input-libinput
-xf86-input-vmmouse
-xf86-input-void
-xf86-video-amdgpu
-xf86-video-ati
-xf86-video-fbdev
+#xf86-input-vmmouse
+#xf86-input-void
+#xf86-video-amdgpu
+#xf86-video-ati
+#xf86-video-fbdev
 #xf86-video-intel
-xf86-video-nouveau
-xf86-video-openchrome
-xf86-video-vesa
+#xf86-video-nouveau
+#xf86-video-openchrome
+#xf86-video-vesa
 xf86-video-vmware
 mesa
 
@@ -165,10 +165,9 @@ mesa
 nvidia-dkms
 nvidia-utils
 nvidia-settings
-mesa-utils
+#mesa-utils
 
-###base and base-devel
-base
+###base-devel
 base-devel
 
 ###virtual box or vmware
@@ -215,6 +214,7 @@ networkmanager-openvpn
 networkmanager-pptp
 networkmanager-vpnc
 openresolv
+rtl8821cu-morrownr-dkms-git
 
 ###file management
 gvfs
@@ -371,7 +371,7 @@ polkit-gnome
 qt5ct
 #qt5-styleplugins
 #qt5-tools
-qt5-webkit
+#qt5-webkit
 #powertop
 ripgrep
 rofi
@@ -461,7 +461,7 @@ neofetch
 arcolinux-pamac-all
 #pamac-aur
 paru-bin
-peek
+#peek
 pulseaudio-equalizer-ladspa
 python-pyparted
 python-pywal
@@ -484,7 +484,6 @@ yad
 #                               GAMES
 ###########################################################################
 
-#arcolinux-meta-steam
 #lutris
 #sauerbraten
 #xonotic
@@ -514,6 +513,7 @@ arcolinux-gtk3-sardi-arc-git
 #arcolinux-gtk3-surfn-plasma-dark-git
 #arcolinux-guake-autostart-git
 arcolinux-hblock-git
+#arcolinux-hyprland-profile-git
 arcolinux-keyring
 arcolinux-kvantum-git
 #arcolinux-kvantum-lxqt-git
@@ -524,7 +524,6 @@ arcolinux-local-applications-all-hide-git
 arcolinux-local-xfce4-git
 #arcolinux-logo-git
 archlinux-logout-git
-#archlinux-logout-themes-git
 #arcolinux-lxqt-applications-add-git
 #arcolinux-lxqt-applications-hide-git
 #arcolinux-meta-logout
@@ -554,6 +553,8 @@ arcolinux-system-config-git
 #arcolinux-system-config-dev-git
 #arcolinuxd-system-config-git
 arcolinux-systemd-services-git
+#arcolinux-systemd-services-dev-git
+#arcolinux-sway-profile-git
 #arcolinux-termite-themes-git
 #arcolinux-tint2-git
 #arcolinux-tint2-themes-git
@@ -563,7 +564,8 @@ archlinux-tweak-tool-git
 #arcolinux-volumeicon-git
 #arcolinux-wallpapers-git
 #arcolinux-wallpapers-dual-git
-#arcolinux-xfce-panel-profiles-git
+#arcolinux-wayland-profile-git
+arcolinux-xfce-panel-profiles-git
 #arcolinux-xmobar-git
 #arcolinux-zsh-git #replaced by edu-zsh in genesis repo
 
@@ -586,6 +588,8 @@ archlinux-tweak-tool-git
 #arcolinux-fvwm3-git
 #arcolinux-gnome-git
 #arcolinux-herbstluftwm-git
+#arcolinux-hypr-git
+#arcolinux-hyprland-git
 #arcolinux-i3wm-git
 #arcolinux-icewm-git
 #arcolinux-jwm-git
@@ -600,6 +604,7 @@ archlinux-tweak-tool-git
 #arcolinux-plasma-nemesis-git
 #arcolinux-qtile-git
 #arcolinux-spectrwm-git
+#arcolinux-sway-git
 #arcolinux-ukui-git
 #arcolinux-worm-git
 #arcolinux-wmderland-git
@@ -691,6 +696,7 @@ arco-calamares
 #arco-calamares-dev
 #arco-calamares-git
 #arco-calamares-next
+#arco-calamares-wayland
 arcolinux-system-installation-git
 #arcolinux-system-installation-dev-git
 #arcolinuxd-config-live-session-git
@@ -732,14 +738,18 @@ adobe-source-han-sans-cn-fonts
 #arcob-calamares-config-bspwm-git
 #arcob-calamares-config-budgie-git
 #arcob-calamares-config-cinnamon-git
+#arcob-calamares-config-chadwm-git
 #arcob-calamares-config-cwm-git
 #arcob-calamares-config-cutefish-git
 #arcob-calamares-config-deepin-git
 #arcob-calamares-config-dwm-git
 #arcob-calamares-config-enlightenment-git
+#arcob-calamares-config-everyway-git
 #arcob-calamares-config-fvwm3-git
 #arcob-calamares-config-gnome-git
 #arcob-calamares-config-herbstluftwm-git
+#arcob-calamares-config-hypr-git
+#arcob-calamares-config-hyprland-git
 #arcob-calamares-config-i3-git
 #arcob-calamares-config-icewm-git
 #arcob-calamares-config-jwm-git
@@ -748,9 +758,11 @@ adobe-source-han-sans-cn-fonts
 #arcob-calamares-config-lxqt-git
 #arcob-calamares-config-mate-git
 #arcob-calamares-config-openbox-git
+#arcob-calamares-config-pantheon-git
 #arcob-calamares-config-plasma-git
 #arcob-calamares-config-qtile-git
 #arcob-calamares-config-spectrwm-git
+#arcob-calamares-config-sway-git
 #arcob-calamares-config-ukui-git
 #arcob-calamares-config-worm-git
 #arcob-calamares-config-wmderland-git
@@ -763,6 +775,8 @@ adobe-source-han-sans-cn-fonts
 #arco-calamares-config-xl-dev-git
 #arco-calamares-config-xs-git
 #arco-calamares-config-xs-lts-git
+#arco-calamares-config-xs-xanmod-git
+#arco-calamares-config-xs-zen-git
 #arco-calamares-config-xl-next-git
 #arcod-calamares-config-git
 #arcod-calamares-config-git-git
@@ -803,7 +817,7 @@ picom
 ###i3wm
 #i3status
 #i3blocks
-#i3-gaps
+#i3-wm
 #autotiling
 
 ###########################################################################
@@ -929,3 +943,7 @@ arcolinux-meta-log
 time
 pace
 ripgrep-all
+#archlinux-login-backgrounds-plain-git
+#vimix-cursors
+mkinitcpio-firmware
+arcolinux-app-glade-git

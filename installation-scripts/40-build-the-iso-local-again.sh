@@ -29,14 +29,14 @@ echo
 	desktop="leftwm"
 	dmDesktop="leftwm"
 
-	arcolinuxVersion='v22.09.04'
+	arcolinuxVersion='v23.07.01'
 
 	isoLabel='arcolinuxb-'$desktop'-'$arcolinuxVersion'-x86_64.iso'
 
 	# setting of the general parameters
-	archisoRequiredVersion="archiso 65-1"
-	buildFolder=$HOME"/arcolinuxb-build"
-	outFolder=$HOME"/ArcoLinuxB-Out"
+	archisoRequiredVersion="archiso 71-1"
+	buildFolder=$HOME"/arcolinux-build"
+	outFolder=$HOME"/ArcoLinux-Out"
 	archisoVersion=$(sudo pacman -Q archiso)
 	
 	# If you are ready to use your personal repo and personal packages

@@ -10,7 +10,6 @@ arch-install-scripts
 #b43-fwcutter
 base
 bind
-#brltty
 broadcom-wl-dkms
 btrfs-progs
 clonezilla
@@ -33,7 +32,6 @@ ethtool
 exfatprogs
 f2fs-tools
 fatresize
-#foot-terminfo
 fsarchiver
 gnu-netcat
 gpart
@@ -44,9 +42,6 @@ grub
 hdparm
 hyperv
 intel-ucode
-irssi
-#iw
-#iwd
 jfsutils
 #kitty-terminfo
 less
@@ -63,7 +58,6 @@ lvm2
 #lynx
 man-db
 man-pages
-mc
 mdadm
 memtest86+
 memtest86+-efi
@@ -98,7 +92,7 @@ reflector
 reiserfsprogs
 rp-pppoe
 rsync
-rxvt-unicode-terminfo
+#rxvt-unicode-terminfo
 screen
 sdparm
 sg3_utils
@@ -120,7 +114,6 @@ usbutils
 vim
 #virtualbox-guest-utils-nox
 vpnc
-#wezterm-terminfo
 wireless-regdb
 wireless_tools
 wpa_supplicant
@@ -132,7 +125,7 @@ xl2tpd
 aic94xx-firmware
 dialog
 dnsutils
-linux-firmware-qlogic
+libadwaita-without-adwaita-git
 linux-headers
 logrotate
 ntp
@@ -176,9 +169,6 @@ virtualbox-guest-utils
 ###packages for dual boot
 os-prober
 
-###LUKS encryption
-cryptsetup
-
 ###audio
 alsa-firmware
 alsa-plugins
@@ -213,6 +203,7 @@ networkmanager-openconnect
 networkmanager-openvpn
 networkmanager-pptp
 networkmanager-vpnc
+networkmanager-qt5
 openresolv
 rtl8821cu-morrownr-dkms-git
 
@@ -310,7 +301,8 @@ ttf-hack
 #adapta-gtk-theme
 arc-gtk-theme
 #arc-darkest-theme-git
-kvantum
+kvantum-qt5-git
+#kvantum-qt6-git
 #openbox-arc-git
 
 ###utilities
@@ -375,7 +367,7 @@ qt5ct
 #powertop
 ripgrep
 rofi
-rxvt-unicode
+#rxvt-unicode
 #simple-scan
 #shotwell
 #speedtest-cli-git
@@ -389,9 +381,9 @@ unace
 unrar
 unzip
 #vnstat
-w3m
-webkit2gtk
-wmctrl
+#w3m
+#webkit2gtk
+#wmctrl
 xapp
 #xdo
 #xdotool
@@ -446,21 +438,24 @@ mkinitcpio-openswap
 ###utilities-repo
 alacritty
 appstream
-archiso
+#appstream-qt5
+#archiso
 #conky-lua-archers
 downgrade
 #font-manager
 #glxinfo
 #gitahead-bin
-grub-customizer
+#grub-customizer
 hardcode-fixer-git
 inxi
 #mintstick-git
 neofetch
 #numix-gtk-theme-git
-arcolinux-pamac-all
+#arcolinux-pamac-all
+#octopi
+#octopi-notifier-qt5
 #pamac-aur
-paru-bin
+paru-git
 #peek
 pulseaudio-equalizer-ladspa
 python-pyparted
@@ -472,9 +467,9 @@ rate-mirrors-bin
 #the_platinum_searcher-bin
 the_silver_searcher
 #trizen
-urxvt-fullscreen
-urxvt-perls
-urxvt-resize-font-git
+#urxvt-fullscreen
+#urxvt-perls
+#urxvt-resize-font-git
 #wttr
 yad
 #yakuake
@@ -495,7 +490,9 @@ yad
 arcolinux-alacritty-git
 arcolinux-arc-kde
 arcolinux-bin-git
-#arcolinux-candy-beauty-git
+arcolinux-bootloader-grub-git
+arcolinux-btop-git
+#a-candy-beauty-icon-theme-git
 #arcolinux-common-git
 #arcolinux-conky-collection-git
 #arcolinux-conky-collection-plasma-git
@@ -564,6 +561,7 @@ archlinux-tweak-tool-git
 #arcolinux-volumeicon-git
 #arcolinux-wallpapers-git
 #arcolinux-wallpapers-dual-git
+#arcolinux-wayfire-profile-git
 #arcolinux-wayland-profile-git
 arcolinux-xfce-panel-profiles-git
 #arcolinux-xmobar-git
@@ -581,6 +579,7 @@ arcolinux-xfce-panel-profiles-git
 #arcolinux-cutefish-git
 #arcolinux-cwm-git
 #arcolinux-deepin-git
+#arcolinux-dk-git
 #arcolinux-dwm-git
 #arcolinux-dwm-slstatus-git
 #arcolinux-dwm-st-git
@@ -590,6 +589,7 @@ arcolinux-xfce-panel-profiles-git
 #arcolinux-herbstluftwm-git
 #arcolinux-hypr-git
 #arcolinux-hyprland-git
+#arcolinux-hyprland-nemesis-git
 #arcolinux-i3wm-git
 #arcolinux-icewm-git
 #arcolinux-jwm-git
@@ -597,18 +597,24 @@ arcolinux-xfce-panel-profiles-git
 #arcolinux-kodi-git
 #arcolinux-lxqt-git
 #arcolinux-mate-git
+#arcolinux-newm-git
+#arcolinux-nimdow-git
 #arcolinux-openbox-git
 #arcolinux-openboxb-git
 #arcolinux-openbox-xtended-git
 #arcolinux-plasma-git
 #arcolinux-plasma-nemesis-git
 #arcolinux-qtile-git
+#arcolinux-river-git
 #arcolinux-spectrwm-git
 #arcolinux-sway-git
+#arcolinux-sway-nemesis-git
 #arcolinux-ukui-git
+#arcolinux-wayfire-git
+#arcolinux-wayfire-nemesis-git
 #arcolinux-worm-git
 #arcolinux-wmderland-git
-arcolinux-xfce-git
+#arcolinux-xfce-git
 #arcolinux-xmonad-polybar-git
 #arcolinux-xmonad-xmobar-git
 
@@ -654,7 +660,7 @@ arcolinux-config-all-desktops-git
 #                           ARCOLINUX DCONF FOLDER
 ###########################################################################
 
-arcolinux-dconf-all-desktops-git
+#arcolinux-dconf-all-desktops-git
 #arcolinux-awesome-dconf-git
 #arcolinux-berry-dconf-git
 #arcolinux-bspwm-dconf-git
@@ -681,6 +687,7 @@ arcolinux-dconf-all-desktops-git
 #arcolinux-qtile-dconf-git
 #arcolinux-spectrwm-dconf-git
 #arcolinux-ukui-dconf-git
+#arcolinux-wayfire-dconf-git
 #arcolinux-worm-dconf-git
 #arcolinux-wmderland-dconf-git
 #arcolinux-xfce-dconf-git
@@ -706,25 +713,26 @@ arcolinux-welcome-app-git
 #arcolinux-welcome-app-deepin-git
 
 ###########################################################################
-#                                CALAMARES DEPENDENCIES
+#                                CALAMARES DEPENDENCIES IN PGKBUILD 
 ###########################################################################
 
-ckbcomp
-xkeyboard-config
-upower
-kcoreaddons
-kconfig
-ki18n
-kservice
-kwidgetsaddons
-kpmcore
+#ckbcomp
+#xkeyboard-config
+#upower
+#kcoreaddons5
+#kconfig5
+#ki18n5
+#kservice5
+#kwidgetsaddons5
+#kpmcore
 #arcolinux-kpmcore
-boost-libs
-libpwquality
-squashfs-tools
-plasma-framework
-hwinfo
-qt5-xmlpatterns
+#boost-libs
+#libpwquality
+#squashfs-tools
+#plasma-framework5
+#hwinfo
+#qt5-xmlpatterns
+
 adobe-source-han-sans-jp-fonts
 adobe-source-han-sans-kr-fonts
 adobe-source-han-sans-cn-fonts
@@ -742,6 +750,7 @@ adobe-source-han-sans-cn-fonts
 #arcob-calamares-config-cwm-git
 #arcob-calamares-config-cutefish-git
 #arcob-calamares-config-deepin-git
+#arcob-calamares-config-dk-git
 #arcob-calamares-config-dwm-git
 #arcob-calamares-config-enlightenment-git
 #arcob-calamares-config-everyway-git
@@ -756,14 +765,22 @@ adobe-source-han-sans-cn-fonts
 #arcob-calamares-config-kodi-git
 # arcob-calamares-config-leftwm-git # replaced by edu-calamares-config-git
 #arcob-calamares-config-lxqt-git
+#arcob-calamares-config-marswm-git
 #arcob-calamares-config-mate-git
+#arcob-calamares-config-newm-git
+#arcob-calamares-config-nimdow-git
 #arcob-calamares-config-openbox-git
 #arcob-calamares-config-pantheon-git
 #arcob-calamares-config-plasma-git
 #arcob-calamares-config-qtile-git
+#arcob-calamares-config-river-git
+#arcob-calamares-config-skywm-git
 #arcob-calamares-config-spectrwm-git
+#arcob-calamares-config-stumpwm-git
 #arcob-calamares-config-sway-git
 #arcob-calamares-config-ukui-git
+#arcob-calamares-config-wayfire-git
+#arcob-calamares-config-wayland-git
 #arcob-calamares-config-worm-git
 #arcob-calamares-config-wmderland-git
 #arcob-calamares-config-xfce-git
@@ -775,6 +792,8 @@ adobe-source-han-sans-cn-fonts
 #arco-calamares-config-xl-dev-git
 #arco-calamares-config-xs-git
 #arco-calamares-config-xs-lts-git
+#arco-calamares-config-xs-rt-git
+#arco-calamares-config-xs-rt-lts-git
 #arco-calamares-config-xs-xanmod-git
 #arco-calamares-config-xs-zen-git
 #arco-calamares-config-xl-next-git
@@ -911,6 +930,9 @@ xfce4-screenshooter
 ###########################################################################
 #                                ISO SPECIFIC
 ###########################################################################
+##arcolinux-apps
+sofirem-git
+
 
 #polybar
 polybar
@@ -948,3 +970,13 @@ ripgrep-all
 #vimix-cursors
 mkinitcpio-firmware
 arcolinux-app-glade-git
+noto-fonts-emoji
+hyfetch
+arcolinux-hyfetch-git
+arcolinux-xfce-prime-git
+arcolinux-arc-dawn-git
+btop
+
+## chaotics-aur
+#flat-remix
+#colloid-cursors-git

@@ -465,7 +465,7 @@ urxvt-fullscreen
 urxvt-perls
 urxvt-resize-font-git
 #wttr
-yad
+#yad
 #yay-git
 
 ###########################################################################
@@ -507,7 +507,7 @@ arcolinux-local-applications-all-hide-git
 #arcolinux-local-applications-plasma-hide-git
 arcolinux-local-xfce4-git
 #arcolinux-logo-git
-#archlinux-logout-git
+archlinux-logout-git
 #arcolinux-lxqt-applications-add-git
 #arcolinux-lxqt-applications-hide-git
 arcolinux-meta-log
@@ -522,7 +522,7 @@ arcolinux-mirrorlist-git
 #arcolinux-obmenu-generator-xtended-git
 #arcolinux-openbox-themes-git
 arcolinux-paru-git
-arcolinux-pipemenus-git
+#arcolinux-pipemenus-git
 #arcolinux-plank-git
 #arcolinux-plank-themes-git
 #arcolinux-plasma-kservices-git
@@ -616,7 +616,7 @@ parole
 mpv
 keepassxc
 time
-pace
+#pace
 ripgrep-all
 xfce4-clipman-plugin
 xfce4-screenshooter

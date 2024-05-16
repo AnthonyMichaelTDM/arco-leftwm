@@ -29,14 +29,14 @@ echo
 	desktop="leftwm"
 	dmDesktop="leftwm"
 
-	arcolinuxVersion='v24.05.01'
+	arcolinuxVersion='v24.06.04'
 
-	isoLabel='arcolinuxb-'$desktop'-'$arcolinuxVersion'-x86_64.iso'
+	isoLabel='arco-'$desktop'-'$arcolinuxVersion'-x86_64.iso'
 
 	# setting of the general parameters
-	archisoRequiredVersion="archiso 76-1"
-	buildFolder=$HOME"/arcolinux-build"
-	outFolder=$HOME"/ArcoLinux-Out"
+	archisoRequiredVersion="archiso 77-1"
+	buildFolder=$HOME"/arco-build"
+	outFolder=$HOME"/arco-Out"
 	archisoVersion=$(sudo pacman -Q archiso)
 
 	# If you want to add packages from the chaotics-aur repo then
@@ -189,7 +189,7 @@ echo
 	echo "Copying the new packages.x86_64 file to the build folder"
 	cp -f ../archiso/packages.x86_64 $buildFolder/archiso/packages.x86_64
 	echo
-	
+
 	if [ $personalrepo == true ]; then
 		echo "Adding packages from your personal repository - packages-personal-repo.x86_64"
 		printf "\n" | sudo tee -a $buildFolder/archiso/packages.x86_64
@@ -210,6 +210,14 @@ echo
 		printf "\n" | sudo tee -a $buildFolder/archiso/airootfs/etc/pacman.conf
 		cat chaotics-repo | sudo tee -a $buildFolder/archiso/pacman.conf
 		cat chaotics-repo | sudo tee -a $buildFolder/archiso/airootfs/etc/pacman.conf
+	fi
+
+	if [ $chaoticsrepo == false ]; then
+		echo "Adding our chaotics repo to /etc/pacman.conf"
+		printf "\n" | sudo tee -a $buildFolder/archiso/pacman.conf
+		printf "\n" | sudo tee -a $buildFolder/archiso/airootfs/etc/pacman.conf
+		cat no-chaotics-repo | sudo tee -a $buildFolder/archiso/pacman.conf
+		cat no-chaotics-repo | sudo tee -a $buildFolder/archiso/airootfs/etc/pacman.conf
 	fi
 
 	echo
@@ -237,18 +245,18 @@ echo
 	#Setting variables
 
 	#profiledef.sh
-	oldname1='iso_name="arcolinuxl'
-	newname1='iso_name="arcolinuxb-'$desktop
+	oldname1='iso_name="arcopro'
+	newname1='iso_name="arco-'$desktop
 
-	oldname2='iso_label="arcolinuxl'
-	newname2='iso_label="arcolinuxb-'$desktop
+	oldname2='iso_label="arcopro'
+	newname2='iso_label="arco-'$desktop
 
-	oldname3='ArcoLinuxL'
-	newname3='ArcoLinuxB-'$desktop
+	oldname3='arcopro'
+	newname3='arco-'$desktop
 
 	#hostname
-	oldname4='ArcoLinuxL'
-	newname4='ArcoLinuxB-'$desktop
+	oldname4='arcopro'
+	newname4='arco-'$desktop
 
 	#sddm.conf user-session
 	oldname5='Session=xfce'
@@ -264,11 +272,11 @@ echo
 	#bios
 	sed -i 's/'$oldname4'/'$newname4'/g' $buildFolder/archiso/syslinux/archiso_sys-linux.cfg
 	#uefi
-	sed -i 's/'$oldname4'/'$newname4'/g' $buildFolder/archiso/efiboot/loader/entries/1-archiso-x86_64-linux.conf
-	sed -i 's/'$oldname4'/'$newname4'/g' $buildFolder/archiso/efiboot/loader/entries/2-archiso-x86_64-linux-no-nouveau.conf
-	sed -i 's/'$oldname4'/'$newname4'/g' $buildFolder/archiso/efiboot/loader/entries/3-nvidianouveau.conf
-	sed -i 's/'$oldname4'/'$newname4'/g' $buildFolder/archiso/efiboot/loader/entries/4-nvidianonouveau.conf
-	sed -i 's/'$oldname4'/'$newname4'/g' $buildFolder/archiso/efiboot/loader/entries/5-nomodeset.conf
+	sed -i 's/'$oldname4'/'$newname4'/g' $buildFolder/archiso/efiboot/loader/entries/01-archiso-x86_64-linux.conf
+	sed -i 's/'$oldname4'/'$newname4'/g' $buildFolder/archiso/efiboot/loader/entries/02-archiso-x86_64-linux-no-nouveau.conf
+	sed -i 's/'$oldname4'/'$newname4'/g' $buildFolder/archiso/efiboot/loader/entries/03-nvidianouveau.conf
+	sed -i 's/'$oldname4'/'$newname4'/g' $buildFolder/archiso/efiboot/loader/entries/04-nvidianonouveau.conf
+	sed -i 's/'$oldname4'/'$newname4'/g' $buildFolder/archiso/efiboot/loader/entries/05-nomodeset.conf
 	
 	echo "Adding time to /etc/dev-rel"
 	date_build=$(date -d now)

@@ -277,6 +277,8 @@ echo
 	sed -i 's/'$oldname4'/'$newname4'/g' $buildFolder/archiso/efiboot/loader/entries/03-nvidianouveau.conf
 	sed -i 's/'$oldname4'/'$newname4'/g' $buildFolder/archiso/efiboot/loader/entries/04-nvidianonouveau.conf
 	sed -i 's/'$oldname4'/'$newname4'/g' $buildFolder/archiso/efiboot/loader/entries/05-nomodeset.conf
+	#grub
+	sed -i 's/'$oldname4'/'$newname4'/g' $buildFolder/archiso/grub/grub.cfg
 	
 	echo "Adding time to /etc/dev-rel"
 	date_build=$(date -d now)

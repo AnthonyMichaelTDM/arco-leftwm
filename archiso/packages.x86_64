@@ -453,7 +453,7 @@ inxi
 #pamac-aur
 paru-git
 #python-pyparted
-python-pywal
+#python-pywal # replaced by pywal16-git from personal repo
 rate-mirrors-bin
 #scour
 #screenkey-git

@@ -295,7 +295,8 @@ noto-fonts-emoji
 ttf-dejavu
 ttf-droid
 ttf-hack
-#ttf-jetbrains-mono-nerd
+ttf-jetbrains-mono
+ttf-jetbrains-mono-nerd
 #ttf-inconsolata
 #ttf-liberation
 #ttf-roboto
@@ -602,10 +603,10 @@ leftwm-git
 leftwm-theme-git
 sxhkd
 autorandr
-ttf-noto-nerd
-ttf-iosevka-nerd
+# ttf-noto-nerd
+# ttf-iosevka-nerd # we have jetbrains-mono-nerd instead
 ttf-material-design-iconic-font
-ttf-meslo-nerd-font-powerlevel10k
+# ttf-meslo-nerd-font-powerlevel10k
 rofi-theme-fonts
 
 ###########################################################################
